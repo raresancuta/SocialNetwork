@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.socialnetwork.controller.NewFriendRequestsAlertController">
+   <children>
+      <Label layoutX="198.0" layoutY="54.0" text="You have one or more friend requests !" AnchorPane.leftAnchor="150.0" />
+      <Label layoutX="236.0" layoutY="92.0" text="Do you want to procced to friend requests page ?" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0" />
+      <Button layoutX="184.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleRedirectFriendRequests" prefHeight="25.0" prefWidth="44.0" text="Yes" />
+      <Button layoutX="264.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="44.0" text="No" />
+      <ImageView fitHeight="47.0" fitWidth="44.0" layoutX="29.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="35.0">
+         <image>
+            <Image url="@../images/information.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

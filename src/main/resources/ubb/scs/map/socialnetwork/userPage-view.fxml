@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="441.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.socialnetwork.controller.UserPageController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="97.0" layoutX="53.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="53.0">
+         <image>
+            <Image url="@../images/default-user-photo.png" />
+         </image></ImageView>
+      <Label layoutX="149.0" layoutY="26.0" text="You are authenticated as : " />
+      <Label fx:id="labelUserName" layoutX="149.0" layoutY="57.0" prefHeight="38.0" prefWidth="262.0">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <TableView fx:id="tableView" layoutX="71.0" layoutY="138.0" prefHeight="203.0" prefWidth="529.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFirstName" prefWidth="127.0" text="First Name" />
+          <TableColumn fx:id="tableColumnLastName" prefWidth="122.0" text="Last Name" />
+            <TableColumn fx:id="tableColumnEmail" prefWidth="127.0" text="E-mail" />
+            <TableColumn fx:id="tableColumnFriendsFrom" prefWidth="151.0" text="Friends From" />
+        </columns>
+      </TableView>
+      <Label layoutX="71.0" layoutY="111.0" text="Your friends are: " />
+      <ButtonBar layoutX="47.0" layoutY="387.0" prefHeight="40.0" prefWidth="507.0" AnchorPane.leftAnchor="47.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleAddFriendship" text="Add" />
+            <Button layoutX="442.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleDeleteFriendship" text="Delete" />
+            <Button layoutX="357.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleFriendRequests" text="Friend Requests" />
+            <Button layoutX="416.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleChat" text="Chat" />
+        </buttons>
+      </ButtonBar>
+      <Button layoutX="456.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="25.0" prefWidth="60.0" text="Log Out" />
+      <Button layoutX="532.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleDeleteAccount" prefHeight="25.0" prefWidth="101.0" text="Delete account" />
+    <Button layoutX="361.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleUpdateData" text="Update data" />
+      <Button fx:id="buttonPrevious" layoutX="71.0" layoutY="350.0" mnemonicParsing="false" onAction="#handlePreviousPage" prefHeight="25.0" prefWidth="67.0" text="Previous" />
+      <Button fx:id="buttonNext" layoutX="540.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleNextPage" prefHeight="25.0" prefWidth="60.0" text="Next" />
+      <Label fx:id="labelPage" layoutX="322.0" layoutY="354.0" text="Label" />
+   </children>
+</AnchorPane>

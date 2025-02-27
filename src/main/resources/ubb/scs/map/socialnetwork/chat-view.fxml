@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.socialnetwork.controller.ChatController">
+<Label prefHeight="25.0" prefWidth="37.0" style="-fx-font-size: 16px;" text="Chat">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Label>
+
+<ListView fx:id="messageListView" prefHeight="300" prefWidth="400" />
+
+<HBox alignment="CENTER" spacing="10">
+      <ComboBox fx:id="userComboBox" prefWidth="150.0" promptText="Select Friend" />
+    <TextArea fx:id="messageField" prefHeight="50" promptText="Message" />
+    <Button onAction="#sendMessage" text="Send" />
+</HBox>
+
+<Button onAction="#replyToMessage" prefHeight="25.0" prefWidth="78.0" text="Reply" />
+</VBox>

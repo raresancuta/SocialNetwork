@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.socialnetwork.controller.DeleteAccountController">
+   <children>
+      <Label layoutX="144.0" layoutY="112.0" prefHeight="31.0" prefWidth="322.0" text="Are you sure you want to delete your account ?">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="152.0" text="You are authenticated as: " />
+      <Label fx:id="labelUserName" layoutX="305.0" layoutY="145.0" prefHeight="31.0" prefWidth="214.0" />
+      <Button layoutX="199.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleConfirmation" prefHeight="25.0" prefWidth="68.0" text="Yes" />
+      <Button layoutX="300.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="75.0" text="Cancel" />
+   </children>
+</AnchorPane>

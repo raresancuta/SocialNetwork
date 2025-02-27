@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.socialnetwork.controller.AddFriendController">
+   <children>
+       <Label layoutX="39.0" layoutY="31.0" prefHeight="34.0" prefWidth="198.0" text="Enter the name of the user: " />
+       <TextField fx:id="textFieldUserName" layoutX="203.0" layoutY="36.0" />
+      <TableView fx:id="tableView" layoutX="39.0" layoutY="74.0" prefHeight="200.0" prefWidth="522.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFirstName" prefWidth="259.0" text="First Name" />
+          <TableColumn fx:id="tableColumnLastName" prefWidth="262.0" text="Last Name" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="343.0" layoutY="296.0" prefHeight="40.0" prefWidth="218.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleAddFriend" text="Send Request" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.socialnetwork.controller.FriendRequestsController">
+   <children>
+      <Label layoutX="46.0" layoutY="54.0" prefHeight="28.0" prefWidth="132.0" text="Your friend requests : " />
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="90.0" prefHeight="200.0" prefWidth="532.0">
+        <columns>
+            <TableColumn fx:id="tableColumnSenderFirstName" prefWidth="161.0" text="First Name" />
+            <TableColumn fx:id="tableColumnSenderLastName" prefWidth="174.0" text="Last Name" />
+            <TableColumn fx:id="tableColumnFriendRequestFromDate" prefWidth="195.0" text="Request Date" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="300.0" layoutY="300.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleAcceptFriendship" text="Accept" />
+            <Button mnemonicParsing="false" onAction="#handleDeclineFriendship" text="Decline" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
